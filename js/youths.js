@@ -112,7 +112,7 @@ function renderProgress() {
 
 //counter render
 function renderCounter() {
-    
+
     if (count <= questionTime) {
         mCounter.innerHTML = count;
         mTimeGauge.style.width = count * gaugeUnit + "px";
@@ -169,10 +169,10 @@ function scoreRender() {
     const scorePerCent = Math.round(100 * score / mQuestions.length);
 
     //choose the image based on the scorePerCent
-    let img = (scorePerCent >= 80) ? "../images/img/5.png" :
-        (scorePerCent >= 60) ? "../images/img/4.png" :
-        (scorePerCent >= 40) ? "../images/img/3.png" :
-        (scorePerCent >= 20) ? "../images/img/2.png" :
+    let img = (scorePerCent >= 80) ? "images/img/5.png" :
+        (scorePerCent >= 60) ? "images/img/4.png" :
+        (scorePerCent >= 40) ? "images/img/3.png" :
+        (scorePerCent >= 20) ? "images/img/2.png" :
         "img/1.png";
     mScoreDiv.innerHTML = "<img src=" + img + ">";
     mScoreDiv.innerHTML += "<p>" + scorePerCent + "%</p>";
